@@ -8,7 +8,7 @@
   <property name="build" location="build"/>
   <property name="dist"  location="dist"/>
   <property name="test"  location="test"/>
-  <property name="junit" location="lib/junit.jar"/>
+  <property name="junit" location="lib/JUnit/junit.jar"/>
  
   <path id="classpath.test">
     <pathelement location="${junit}" />
