@@ -7,7 +7,7 @@ import org.junit.Test;
 public class MainTest {
 
 	@Test
-	public void maintest() {
+	public void mainTest() {
 		assertTrue(1 == 1);
 	}
 
