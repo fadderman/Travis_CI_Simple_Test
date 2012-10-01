@@ -29,6 +29,9 @@
     <javac srcdir="${test}" destdir="${build}/test">
       <classpath>
         <pathelement location="${lib}"/>
+      	<fileset dir="${lib}">
+      		<include name="**/*.jar" />
+      	</fileset>
       </classpath>
     </javac>
   </target>
