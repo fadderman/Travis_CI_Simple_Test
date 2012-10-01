@@ -8,10 +8,10 @@
   <property name="build" location="build"/>
   <property name="dist"  location="dist"/>
   <property name="test"  location="Test"/>
-  <property name="junit" location="lib/junit-4.10.jar"/>
+  <property name="lib" location="lib"/>
  
   <path id="classpath.test">
-    <pathelement location="${junit}" />
+    <pathelement location="${lib}" />
     <pathelement location="${test}" />
     <pathelement location="${build}/main"/>
     <pathelement location="${build}/test"/>
@@ -40,7 +40,14 @@
  
   <target name="test" depends="compile">
     <junit fork="yes" haltonfailure="true">
-      <classpath refid="classpath.test" />
+		<classpath>
+
+    	<path refid="classpath.test" />
+    	    <fileset dir="${lib}">
+				<include name="**/junit.jar" />
+			</fileset>
+	</classpath>
+
       <batchtest fork="yes" todir="tres">
         <formatter type="brief" usefile="false"/>
         <fileset dir="${test}">
