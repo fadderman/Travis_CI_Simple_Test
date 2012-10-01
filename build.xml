@@ -30,7 +30,7 @@
     <javac srcdir="${src}" destdir="${build}/main"/>
     <javac srcdir="${test}" destdir="${build}/test">
       <classpath>
-        <pathelement location="${junit}"/>
+        <pathelement location="${lib}"/>
       </classpath>
     </javac>
   </target>
