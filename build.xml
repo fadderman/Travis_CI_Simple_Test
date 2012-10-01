@@ -44,7 +44,7 @@
 
     	<path refid="classpath.test" />
     	    <fileset dir="${lib}">
-				<include name="**/junit.jar" />
+				<include name="**/*.jar" />
 			</fileset>
 	</classpath>
 
