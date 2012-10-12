@@ -43,6 +43,9 @@
  
   <target name="test" depends="compile">
     <junit fork="yes" haltonfailure="true">
+		<classpath>
+    		<path refid="classpath.test" />
+		</classpath>
       <batchtest fork="yes" todir="tres">
         <formatter type="brief" usefile="false"/>
         <fileset dir="${test}">
