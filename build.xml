@@ -44,18 +44,11 @@
   <target name="test" depends="compile">
     <junit fork="yes" haltonfailure="true">
 		<classpath>
-<<<<<<< HEAD
     		<path refid="classpath.test" />
-		</classpath>
-=======
-
-    	<path refid="classpath.test" />
-    	    <fileset dir="${lib}">
+    	     <fileset dir="${lib}">
 				<include name="**/*.jar" />
-			</fileset>
-	</classpath>
-
->>>>>>> parent of 91f5ff8... removed exessec code from build.xml
+			 </fileset>
+		</classpath>
       <batchtest fork="yes" todir="tres">
         <formatter type="brief" usefile="false"/>
         <fileset dir="${test}">
